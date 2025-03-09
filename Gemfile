@@ -1,13 +1,22 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.2.0"
+ruby "3.4.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.2", ">= 7.0.2.2"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
+
+#Ruby 3.5 Compatibility flags
+gem 'logger'
+gem 'mutex_m'
+gem 'ostruct'
+gem 'base64'
+gem 'bigdecimal'
+#gem 'fiddle'
+gem 'benchmark'
 
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "~> 1.4"

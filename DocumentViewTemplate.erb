@@ -1,0 +1,6 @@
+<h1><%= @document.title %></h1>
+<p><strong>Abstract:</strong> <%= @document.abstract %></p>
+<p><strong>Description:</strong> <%= @document.description %></p>
+
+<p><%= link_to 'Edit Document', edit_document_path(@document) %> | 
+<%= link_to 'Back to Documents', documents_path %></p>
